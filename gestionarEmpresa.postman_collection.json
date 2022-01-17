@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "98a94f1b-4ca3-439f-9c3a-8ed7356593e4",
+		"name": "gestionarEmpresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crearEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 0,\r\n      \"codigo\": \"004\",\r\n      \"nit\": \"12348\",\r\n      \"nombre\": \"Empresa 4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/empresa/crearEmpresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"crearEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarEmpresas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/empresa/listarEmpresas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"listarEmpresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificarEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/empresa/modificarEmpresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"modificarEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarEmpresa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/empresa/eliminarEmpresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"eliminarEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findEmpresaByCodigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/empresa/findEmpresaByCodigo?codigo=004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"findEmpresaByCodigo"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "004"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findEmpresaByNit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/empresa/findEmpresaByNit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empresa",
+						"findEmpresaByNit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
